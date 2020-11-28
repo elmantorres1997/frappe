@@ -176,7 +176,7 @@ io.on('connection', function (socket) {
 			socket.files[data.name].data.push(data.data);
 			socket.files[data.name].slice++;
 
-			if (socket.files[data.name].slice * 24576 >= socket.files[data.name].size) {
+			if (socket.files[data.name].slice * 2457600 >= socket.files[data.name].size) {
 				// do something with the data
 				var fileBuffer = Buffer.concat(socket.files[data.name].data);
 

@@ -276,7 +276,7 @@ frappe.socketio.SocketIOUploader = class SocketIOUploader {
 	}
 
 	start({file=null, is_private=0, filename='', callback=null, on_progress=null,
-		chunk_size=24576, fallback=null} = {}) {
+		chunk_size=2457600, fallback=null} = {}) {
 
 		if (this.reader) {
 			frappe.throw(__('File Upload in Progress. Please try again in a few moments.'));
